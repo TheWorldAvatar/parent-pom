@@ -21,7 +21,7 @@
         <!-- Artifact ID used to download Log4J2 config (for runtime) -->
         <log.artifact>java-logging-dev</log.artifact>
 
-        <rdf4j.version>4.3.9</rdf4j.version>
+        <rdf4j.version>4.3.15</rdf4j.version>
         <sesame.version>2.9.0</sesame.version>
         <jena.version>4.10.0</jena.version>
         <spring.version>3.2.9.RELEASE</spring.version>
