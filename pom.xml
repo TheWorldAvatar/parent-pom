@@ -45,12 +45,12 @@
         <snapshotRepository>
             <id>repo</id>
             <name>TheWorldAvatar Maven Repository</name>
-            <url>https://maven.pkg.github.com/cambridge-cares/TheWorldAvatar/</url>
+            <url>https://maven.pkg.github.com/theworldavatar/parent-pom</url>
         </snapshotRepository>
         <repository>
             <id>repo</id>
             <name>TheWorldAvatar Maven Repository</name>
-            <url>https://maven.pkg.github.com/cambridge-cares/TheWorldAvatar/</url>
+            <url>https://maven.pkg.github.com/theworldavatar/parent-pom</url>
         </repository>
     </distributionManagement>
 
