@@ -10,9 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <!-- Copy these entries into the <parent> node in your project's pom.xml file -->
-    <groupId>uk.ac.cam.cares.jps</groupId>
-    <artifactId>jps-parent-pom</artifactId>
-    <version>2.3.1</version>
+    <groupId>io.theworldavatar</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>2.3.2-post-move-version-SNAPSHOT</version>
 
     <!-- Common properties -->
     <properties>
