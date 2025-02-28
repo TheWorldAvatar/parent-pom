@@ -26,7 +26,7 @@
         <jena.version>4.10.0</jena.version>
         <spring.version>3.2.9.RELEASE</spring.version>
         <glassfish.jersey.version>2.41</glassfish.jersey.version>
-        <jackson.version>2.16.1</jackson.version>
+        <jackson.version>2.18.2</jackson.version>
         <log4j.version>2.23.0</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
         <apache.httpcomponents.version>4.5.14</apache.httpcomponents.version>
