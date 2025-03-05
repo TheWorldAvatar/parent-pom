@@ -12,7 +12,13 @@
     <!-- Copy these entries into the <parent> node in your project's pom.xml file -->
     <groupId>uk.ac.cam.cares.jps</groupId>
     <artifactId>jps-parent-pom</artifactId>
-    <version>2.3.2</version>
+    <version>3.0.1-spring-boot-3-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
 
     <!-- Common properties -->
     <properties>
@@ -24,16 +30,20 @@
         <rdf4j.version>4.3.9</rdf4j.version>
         <sesame.version>2.9.0</sesame.version>
         <jena.version>4.10.0</jena.version>
-        <spring.version>3.2.9.RELEASE</spring.version>
         <glassfish.jersey.version>2.41</glassfish.jersey.version>
         <jackson.version>2.16.1</jackson.version>
         <log4j.version>2.23.0</log4j.version>
-        <slf4j.version>1.7.36</slf4j.version>
+        <slf4j.version>2.0.13</slf4j.version>
         <apache.httpcomponents.version>4.5.14</apache.httpcomponents.version>
         <docker-java.version>3.3.5</docker-java.version>
     </properties>
 
     <repositories>
+        <repository>
+            <id>github</id>
+            <name>The World Avatar Maven Repository</name>
+            <url>https://maven.pkg.github.com/theworldavatar/*</url>
+        </repository>
         <repository>
             <id>GeoSolutions</id>
             <url>https://maven.geo-solutions.it/</url>
@@ -64,7 +74,6 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>3.4.0</version>
                     <configuration>
-                        <warName>${project.artifactId}##${project.version}</warName>
                         <outputDirectory>output</outputDirectory>
                         <webResources>
                             <resource>
@@ -247,6 +256,11 @@
                 <groupId>com.github.docker-java</groupId>
                 <artifactId>docker-java-transport-httpclient5</artifactId>
                 <version>${docker-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents.client5</groupId>
+                <artifactId>httpclient5</artifactId>
+                <version>5.0.3</version>
             </dependency>
             <dependency>
                 <groupId>com.github.jsonld-java</groupId>
@@ -488,11 +502,6 @@
                 <artifactId>jena-arq</artifactId>
                 <version>${jena.version}</version>
             </dependency>
-			<dependency>
-				<groupId>org.apache.jena</groupId>
-				<artifactId>jena-core</artifactId>
-				<version>${jena.version}</version>
-			</dependency>
             <dependency>
                 <groupId>org.apache.jena</groupId>
                 <artifactId>jena-geosparql</artifactId>
@@ -873,28 +882,7 @@
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
-                <version>${spring.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>commons-logging</artifactId>
-                        <groupId>commons-logging</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
+
             <dependency>
                 <groupId>org.testcontainers</groupId>
                 <artifactId>junit-jupiter</artifactId>
