@@ -24,7 +24,7 @@
         <rdf4j.version>4.3.9</rdf4j.version>
         <sesame.version>2.9.0</sesame.version>
         <jena.version>4.10.0</jena.version>
-        <spring.version>3.2.9.RELEASE</spring.version>
+        <spring.version>6.1.14</spring.version>
         <glassfish.jersey.version>2.41</glassfish.jersey.version>
         <jackson.version>2.16.1</jackson.version>
         <log4j.version>2.23.0</log4j.version>
